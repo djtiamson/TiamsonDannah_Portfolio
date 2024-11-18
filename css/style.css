@@ -332,7 +332,7 @@ a:focus {
 }
 
 .slider_section .detail-box h1 span {
-  color: #392815;
+  color: #c89918;
 }
 
 .slider_section .detail-box .btn-box {
@@ -353,11 +353,11 @@ a:focus {
 .slider_section .detail-box .btn-box .btn-1 {
   display: inline-block;
   padding: 10px 0px;
-  background-color: #0a2050;
+  background-color: #c89918;
   color: #ffffff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  border: 1px solid #0a2050;
+  border: 1px solid #c89918;
   border-radius: 0;
 }
 
@@ -852,7 +852,7 @@ a:focus {
 }
 
 .client_section {
-  background-image: url(../images/client-bg.jpg);
+  background-image: url(../images/projects-bg.png);
   background-size: cover;
 }
 
