@@ -991,7 +991,7 @@ a:focus {
 
 
 .info_section {
-  background-color: #22180b;
+  background-color: #c89918;
   color: #ffffff;
   padding: 40px 0 75px 0;
   font-family: "Open Sans",
@@ -1085,7 +1085,7 @@ a:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #c89918;
+  background-color: #22180b;
 }
 
 .footer_section p {
