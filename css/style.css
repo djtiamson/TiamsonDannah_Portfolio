@@ -256,7 +256,7 @@ a:focus {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #c89918;
+  background-color: rgba(200, 153, 24, 0.9);
   overflow-x: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -314,6 +314,7 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  padding-top: 125px;
 }
 
 .slider_section .detail-box {
@@ -390,9 +391,11 @@ a:focus {
 }
 
 .slider_section .carousel-indicators {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  position: absolute; 
+  right: 800px; 
+  bottom: 10px; 
+  transform: translateY(-50%);
+  display: flex; 
 }
 
 .slider_section .carousel-indicators li {
@@ -403,13 +406,14 @@ a:focus {
   border: 2px solid #392815;
   color: #000000;
   position: relative;
-  margin: 0 4px;
+  margin-right: 5px;
   border-radius: 100%;
 }
 
 .slider_section .carousel-indicators li.active {
   width: 18px;
   height: 18px;
+  background-color: #c89918;
 }
 
 .slider_section .li_before::before {
@@ -773,7 +777,7 @@ a:focus {
 
 .experiences_section {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #0a2050), color-stop(60%, transparent));
-  background: linear-gradient(to bottom, #0a2050 60%, transparent 60%);
+  background: linear-gradient(to bottom, #22180b 60%, transparent 60%);
 }
 
 .experiences_section .heading_container {
@@ -985,19 +989,9 @@ a:focus {
   color: #392815;
 }
 
-.contact_section .map_container {
-  height: 725px;
-  border-radius: 100% 0 0 0;
-  overflow: hidden;
-  margin-left: 45px;
-}
-
-.contact_section .map_container .map-responsive {
-  height: 100%;
-}
 
 .info_section {
-  background-color: #0a2050;
+  background-color: #22180b;
   color: #ffffff;
   padding: 40px 0 75px 0;
   font-family: "Open Sans",
@@ -1013,9 +1007,6 @@ a:focus {
   margin-bottom: 25px;
 }
 
-.info_time p {
-  text-transform: uppercase;
-}
 
 .info_form input {
   width: 100%;
@@ -1094,7 +1085,7 @@ a:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #392815;
+  background-color: #c89918;
 }
 
 .footer_section p {
@@ -1108,6 +1099,3 @@ a:focus {
 .footer_section a {
   color: #ffffff;
 }
-
-/* end footer section*/
-/*# sourceMappingURL=style.css.map */
