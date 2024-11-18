@@ -17,7 +17,7 @@
     bottom: -35px;
   }
 
-  .animal_section .animal_container .box {
+  .features_section .features_container .box {
     flex-basis: 45%;
   }
 
@@ -75,44 +75,44 @@
     display: none;
   }
 
-  .pet_section .img-box {
+  .skills_section .img-box {
     padding: 0;
     margin-left: 75px;
   }
 
-  .pet_section .detail-box {
+  .skills_section .detail-box {
 
     margin-top: 90px;
 
   }
 
-  .pet_section .detail-box .heading_container {
+  .skills_section .detail-box .heading_container {
 
     align-items: flex-start;
     text-align: left;
 
   }
 
-  .food_section {
+  .experiences_section {
     background: linear-gradient(to bottom, #0a2050 30%, transparent 30%);
 
   }
 
-  .food_section .food_container {
+  .experiences_section .experiences_container {
     flex-direction: column;
     align-items: center;
   }
 
-  .food_section .food_container .box:not(:last-child) {
+  .experiences_section .experiences_container .box:not(:last-child) {
     margin-bottom: 35px;
   }
 
-  .client_section #carouselExampleControls {
+  .projects_section #carouselExampleControls {
     flex-direction: column;
     align-items: center;
   }
 
-  .client_section .carousel_btn-box {
+  .projects_section .carousel_btn-box {
     margin-top: 45px;
   }
 
@@ -141,7 +141,7 @@
     font-size: 2.5rem;
   }
 
-  .animal_section .animal_container .box {
+  .features_section .features_container .box {
     flex-basis: 95%;
     animation: none !important;
   }
@@ -165,7 +165,7 @@
 }
 
 @media (max-width: 480px) {
-  .pet_section .img-box::before {
+  .skills_section .img-box::before {
     background-size: cover;
   }
 }
