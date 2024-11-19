@@ -5,8 +5,6 @@ body {
   background-color: #ffffff;
 }
 
-
-/*  SECTION */
 .centered {
   text-align: center; 
 }
@@ -15,6 +13,7 @@ body {
   font-weight: bold;
 }
 
+/* LAYOUT PADDINGS */
 .layout_padding {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -24,6 +23,22 @@ body {
   padding-top: 120px;
 }
 
+.hero_area {
+  height: 100vh;
+  background-image: url(../images/home-bg.png);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+
+/* HEADER CONTAINER */
 .heading_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,23 +59,6 @@ body {
 .heading_container h2 {
   font-weight: bold;
 }
-
-.hero_area {
-  height: 100vh;
-  background-image: url(../images/home-bg.png);
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: relative;
-}
-
-
-
 
 .header_section .container-fluid {
   padding-right: 25px;
@@ -100,6 +98,8 @@ a:focus {
           box-shadow: none;
 }
 
+
+/* NAV SECTION */
 .custom_nav-container .nav_search-btn {
   background-image: url(../images/search-icon.png);
   background-size: 17px;
@@ -148,19 +148,7 @@ a:focus {
   height: 30px;
 }
 
-.lg_toggl-btn {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  width: 56px;
-  height: 40px;
-  cursor: pointer;
-}
-
-.lg_toggl-btn:focus {
-  outline: none;
-}
-
+/* USER OPTION */
 .User_option {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -181,6 +169,8 @@ a:focus {
   display: none;
 }
 
+
+/* MENU BUTTON */
 .custom_menu-btn {
   z-index: 9;
   position: absolute;
@@ -235,7 +225,7 @@ a:focus {
 }
 
 
-/* OVERLAYED SIDEBAR SECTION */
+/* OVERLAYED SIDEBAR/MENU SECTION */
 .overlay {
   height: 100%;
   width: 0;
@@ -866,26 +856,15 @@ a:focus {
 
 /* US SECTION */
 .us_section .us_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   position: relative;
 }
 
 .us_section .us_container .box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .us_section .us_container .box img {
@@ -894,35 +873,19 @@ a:focus {
 
 .us_section .us_container .box .img1-box {
   height: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .us_section .us_container .box .img2-box {
   width: 175px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .us_section .us_container .box .detail-box {
   margin-top: 15px;
-}
-
-.us_section .us_container .box .detail-box h6 {
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #0e0e0e;
 }
 
 .us_section .us_container::before {
@@ -932,33 +895,22 @@ a:focus {
   left: 50%;
   width: 80%;
   height: 1.5px;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, #392815));
   background-image: linear-gradient(to right, transparent 50%, #392815 50%);
   background-size: 20px 100%;
   z-index: -1;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  -webkit-animation: border-dance 4s infinite linear;
-          animation: border-dance 4s infinite linear;
+  transform: translateX(-50%);
+  animation: border-dance 4s infinite linear; /* Assuming this animation is used */
 }
 
 .us_section .btn-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 55px;
 }
 
 .us_section .btn-box a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   color: #392815;
   text-transform: uppercase;
 }
