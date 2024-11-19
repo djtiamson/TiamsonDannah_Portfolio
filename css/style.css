@@ -428,22 +428,16 @@ a:focus {
           transform: rotate(25deg);
 }
 
+
 .about_section .detail-box {
-  text-align: center;
-  width: 80%;
-  margin: auto;
+  width: 80%; /* Set a width to control layout */
+  margin: 0 auto; /* Center the detail box horizontally */
+  padding-left: 10px; /* Smaller left padding */
+  padding-right: 10px; /* Optional: Adjust right padding if needed */
 }
 
-.about_section .detail-box .heading_container {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
 
-.about_section .detail-box .heading_container h2 {
-  color: #151515;
-}
+
 
 .about_section .detail-box p {
   color: #0e0e0e;
