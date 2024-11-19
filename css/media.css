@@ -17,7 +17,7 @@
     bottom: -35px;
   }
 
-  .features_section .features_container .box {
+  .projects_section .projects_container .box {
     flex-basis: 45%;
   }
 
@@ -93,26 +93,12 @@
 
   }
 
-  .experiences_section {
-    background: linear-gradient(to bottom, #0a2050 30%, transparent 30%);
-
-  }
-
-  .experiences_section .experiences_container {
+  .experiences_section #carouselExampleControls {
     flex-direction: column;
     align-items: center;
   }
 
-  .experiences_section .experiences_container .box:not(:last-child) {
-    margin-bottom: 35px;
-  }
-
-  .projects_section #carouselExampleControls {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .projects_section .carousel_btn-box {
+  .experiences_section .carousel_btn-box {
     margin-top: 45px;
   }
 
@@ -141,7 +127,7 @@
     font-size: 2.5rem;
   }
 
-  .features_section .features_container .box {
+  .projects_section .projects_container .box {
     flex-basis: 95%;
     animation: none !important;
   }

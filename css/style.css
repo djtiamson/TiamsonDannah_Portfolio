@@ -55,7 +55,7 @@ body {
 /*header section*/
 .hero_area {
   height: 100vh;
-  background-image: url(../images/background.png);
+  background-image: url(../images/home-bg.png);
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -476,13 +476,14 @@ a:focus {
   margin-left: 5px;
 }
 
-.features_section {
+.projects_section {
   background-image: url(/images/features-bg.png);
   background-size: cover;
   color: #ffffff;
 }
 
-.features_section .features_container {
+
+.projects_section .projects_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -493,7 +494,7 @@ a:focus {
           justify-content: center;
 }
 
-.features_section .features_container .box {
+.projects_section .projects_container .box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -510,31 +511,31 @@ a:focus {
       flex-basis: 20%;
 }
 
-.features_section .features_container .box .img-box {
+.projects_section .projects_container .box .img-box {
   border-radius: 25px;
   overflow: hidden;
   -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
 }
 
-.features_section .features_container .box .img-box img {
+.projects_section .projects_container .box .img-box img {
   width: 100%;
 }
 
-.features_section .features_container .box .detail-box {
+.projects_section .projects_container .box .detail-box {
   margin-top: 15px;
 }
 
-.features_section .features_container .box .detail-box h5 {
+.projects_section .projects_container .box .detail-box h5 {
   font-weight: bold;
 }
 
-.features_section .features_container .box.b1 {
+.projects_section .projects_container .box.b1 {
   -webkit-animation: odd-box-animate 3s infinite;
           animation: odd-box-animate 3s infinite;
 }
 
-.features_section .features_container .box.b2 {
+.projects_section .projects_container .box.b2 {
   -webkit-animation: even-box-animate 3s infinite;
           animation: even-box-animate 3s infinite;
 }
@@ -776,90 +777,11 @@ a:focus {
 }
 
 .experiences_section {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #0a2050), color-stop(60%, transparent));
-  background: linear-gradient(to bottom, #22180b 60%, transparent 60%);
-}
-
-.experiences_section .heading_container {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  color: #ffffff;
-}
-
-.experiences_section .experiences_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.experiences_section .experiences_container .box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  margin: 45px 20px 0 20px;
-}
-
-.experiences_section .experiences_container .box .img-box img {
-  max-width: 100%;
-}
-
-.experiences_section .experiences_container .box .detail-box {
-  margin-top: 15px;
-}
-
-.experiences_section .experiences_container .box .detail-box h6 {
-  color: #392815;
-  text-transform: uppercase;
-}
-
-.experiences_section .experiences_container .box .detail-box h3 {
-  font-weight: bold;
-  color: #392815;
-}
-
-.experiences_section .experiences_container .box .detail-box h3 span {
-  color: #0a2050;
-}
-
-.experiences_section .experiences_container .box .detail-box a {
-  display: inline-block;
-  padding: 8px 45px;
-  background-color: #0a2050;
-  color: #392815;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  border: 1px solid #0a2050;
-  border-radius: 0;
-  margin-top: 15px;
-}
-
-.experiences_section .experiences_container .box .detail-box a:hover {
-  background-color: transparent;
-  color: #c89918;
-}
-
-.projects_section {
   background-image: url(../images/projects-bg.png);
   background-size: cover;
 }
 
-.projects_section #carouselExampleControls {
+.experiences_section #carouselExampleControls {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -867,43 +789,39 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
 }
-
-.projects_section .box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 75px;
+.experiences_section .box {
+    display: flex; /* Simplified */
+    margin-top: 75px; /* Space above each project box */
 }
 
-.projects_section .box .img-box {
-  margin-right: 25px;
-  min-width: 250px;
+.experiences_section .box .img-box {
+    margin-right: 25px; /* Space between image and text */
+    min-width: 250px; /* Minimum width for images */
+    max-width: 100%; /* Ensure responsiveness */
 }
 
-.projects_section .box .img-box img {
-  width: 100%;
+.experiences_section .box .img-box img {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
 }
 
-.projects_section .box .detail-box h4 {
-  text-transform: uppercase;
-  font-size: 24px;
+.experiences_section .box .detail-box h4 {
+    text-transform: uppercase; /* Uppercase title */
+    font-size: 24px; /* Title size */
+    margin-bottom: 10px; /* Space below title */
 }
 
-.projects_section .box .detail-box img {
-  width: 25px;
+.experiences_section .box .detail-box p { /* Assuming you have a paragraph for description */
+    margin-top: 0; /* Reset default margin */
 }
 
-.projects_section .carousel_btn-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.experiences_section .carousel_btn-box {
+    display: flex; /* Use Flexbox for button alignment */
+    align-items: center; /* Center align items */
 }
 
-.projects_section .carousel_btn-box .carousel-control-prev,
-.projects_section .carousel_btn-box .carousel-control-next {
+.experiences_section .carousel_btn-box .carousel-control-prev,
+.experiences_section .carousel_btn-box .carousel-control-next {
   position: unset;
   width: 45px;
   height: 45px;
@@ -915,16 +833,16 @@ a:focus {
   margin: 0 3px;
 }
 
-.projects_section .carousel_btn-box .carousel-control-prev:hover,
-.projects_section .carousel_btn-box .carousel-control-next:hover {
+.experiences_section .carousel_btn-box .carousel-control-prev:hover,
+.experiences_section .carousel_btn-box .carousel-control-next:hover {
   background-color: #000000;
 }
 
-.projects_section .carousel_btn-box .carousel-control-prev {
+.experiences_section .carousel_btn-box .carousel-control-prev {
   background-image: url(../images/prev.png);
 }
 
-.projects_section .carousel_btn-box .carousel-control-next {
+.experiences_section .carousel_btn-box .carousel-control-next {
   background-image: url(../images/next.png);
 }
 
