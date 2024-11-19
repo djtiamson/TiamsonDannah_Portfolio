@@ -430,14 +430,11 @@ a:focus {
 
 
 .about_section .detail-box {
-  width: 80%; /* Set a width to control layout */
-  margin: 0 auto; /* Center the detail box horizontally */
-  padding-left: 10px; /* Smaller left padding */
-  padding-right: 10px; /* Optional: Adjust right padding if needed */
+  width: 80%; 
+  margin: 0 auto; 
+  padding-left: 10px; 
+  padding-right: 10px; 
 }
-
-
-
 
 .about_section .detail-box p {
   color: #0e0e0e;
