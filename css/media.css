@@ -52,7 +52,7 @@
   .skills_section .img-box {
     width: 100%;
     padding: 0;
-    margin-left: 75px; /* Ensure this is necessary */
+    margin-left: 75px; 
   }
 
   .slider_section .img-box {
@@ -73,8 +73,8 @@
 
   .skills_section .detail-box {
     margin-top: 90px;
-    align-items: flex-start; /* Moved from below */
-    text-align: left; /* Moved from below */
+    align-items: flex-start; 
+    text-align: left;
   }
 
   .experiences_section #carouselExampleControls {
@@ -89,44 +89,37 @@
 
 @media (max-width: 576px) {
   
-   /* Centering heading container */
    .heading_container {
      align-items: center;
      text-align: center;
    }
 
-   /* Adjusting font size for heading in slider section */
    .slider_section .detail-box h1 {
      font-size: 2.5rem;
    }
 
-   /* Adjusting project box size */
    .projects_section .projects_container .box {
      flex-basis: 95%;
-     animation: none !important; /* Ensure this is necessary */
+     animation: none !important; 
    }
 
-   /* Contact section adjustments */
    .contacts_section .box {
      flex-direction: column;
      align-items: center;
      text-align: center;
    }
 
-   /* Adjust image box in contact section */
    .contacts_section .box .img-box {
-     margin-bottom:25px; /* Combined margin settings if applicable */
+     margin-bottom:25px; 
    }
 
-   /* Map container height adjustment */
+
    .contact_section .map_container {
      height:475px; 
    }
 }
 
 @media (max-width: 480px) {
-  
-   /* Cover background size for skills section image box */
    .skills_section .img-box::before {
      background-size: cover; 
    }
@@ -154,15 +147,13 @@
 
 @media (max-width:375px) {
 
-   /* Adjusting map container height for smaller screens */
+
    .contact_section .map_container { 
      height:400px; 
    }
 }
 
 @media (min-width:1200px) {
-
-   /* Setting maximum width for container on larger screens */
    .container { 
      max-width:1170px; 
    }
