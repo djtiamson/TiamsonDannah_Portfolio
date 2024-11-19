@@ -1017,3 +1017,11 @@ a:focus {
 .footer_section a {
   color: #ffffff;
 }
+
+.centered {
+  text-align: center; /* Centers the text */
+}
+
+.bold {
+  font-weight: bold; /* Makes the text bold */
+}
